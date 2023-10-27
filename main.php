@@ -1,8 +1,13 @@
 <?php
-session_start();
-if(empty($_SESSION['username_decafe'])){
-    header('location: login');
-}
+    // session_start();
+    if (empty($_SESSION['username_decafe'])) {
+        header('location: login');
+    }
+    
+    include "proses/connect.php";
+    $query = mysqli_query($conn, "select * from tb_user where username = '$_SESSION[username_decafe]'");
+    $hasil = mysqli_fetch_array($query);
+
 ?>
 
 <!doctype html>
@@ -34,7 +39,7 @@ if(empty($_SESSION['username_decafe'])){
 
             <!-- Content -->
             <?php
-                include $page;
+            include $page;
             ?>
             <!-- End Content -->
         </div>

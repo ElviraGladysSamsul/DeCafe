@@ -17,16 +17,20 @@
 -- Dumping structure for table db_decafe.tb_user
 CREATE TABLE IF NOT EXISTS `tb_user` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `nama` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `username` varchar(200) DEFAULT NULL,
   `password` varchar(200) DEFAULT NULL,
   `level` int DEFAULT NULL,
+  `nohp` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Dumping data for table db_decafe.tb_user: ~2 rows (approximately)
-INSERT INTO `tb_user` (`id`, `username`, `password`, `level`) VALUES
-	(1, 'abc@abc.com', '5f4dcc3b5aa765d61d8327deb882cf99', NULL),
-	(2, 'admin@admin.com', '5f4dcc3b5aa765d61d8327deb882cf99', NULL);
+-- Dumping data for table db_decafe.tb_user: ~4 rows (approximately)
+INSERT INTO `tb_user` (`id`, `nama`, `username`, `password`, `level`, `nohp`) VALUES
+	(1, 'Abc1', 'abc1@abc.com', '5f4dcc3b5aa765d61d8327deb882cf99', 2, '1234567889011'),
+	(2, 'owner', 'admin@admin.com', '5f4dcc3b5aa765d61d8327deb882cf99', 1, '1234567889011'),
+	(3, 'Abc2', 'abc2@abc.com', '5f4dcc3b5aa765d61d8327deb882cf99', 3, '1234567889011'),
+	(4, 'Abc3', 'abc3@abc.com', '5f4dcc3b5aa765d61d8327deb882cf99', 4, '1234567889011');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
