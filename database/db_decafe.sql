@@ -17,13 +17,13 @@
 -- Dumping structure for table db_decafe.tb_user
 CREATE TABLE IF NOT EXISTS `tb_user` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nama` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `nama` varchar(200) CHARACTER SET utf8mb4 DEFAULT NULL,
   `username` varchar(200) DEFAULT NULL,
   `password` varchar(200) DEFAULT NULL,
   `level` int DEFAULT NULL,
   `nohp` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- Dumping data for table db_decafe.tb_user: ~4 rows (approximately)
 INSERT INTO `tb_user` (`id`, `nama`, `username`, `password`, `level`, `nohp`) VALUES
