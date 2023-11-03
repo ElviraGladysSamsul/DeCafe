@@ -196,7 +196,7 @@ if(!empty($_SESSION['username_decafe'])){
                     </label>
                 </div>
             </div>
-            <button class="btn btn-danger w-100 py-2" type="submit" name="submit_validate" value="abc">login</button>
+            <button class="btn btn-warning w-100 py-2" type="submit" name="submit_validate" value="abc">login</button>
             <p class="mt-5 mb-3 text-body-secondary">&copy; 2022–2023</p>
         </form>
     </main>
